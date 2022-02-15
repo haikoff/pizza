@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    max-width: 1680px;
+    width: 100%;
+    margin: 0 auto;
+    background: #E5E5E5;
+}
+
+.center{
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header{
+    max-width: 1680px;
+    width: 100%;
+    margin: 0 auto;
+    background: #FFFFFF;
+    height: 105px;
+}
+
+.header-top-left{
+    padding-top: 10px;
+    display: flex;
+}
+
+.header-top-left select{
+    margin-left: 8px;
+    border: #FFFFFF;
+    font-size: 18px;
+    align-self: center;
+}
+
+.header-top-left a{
+    text-decoration: none;
+    margin-left: 40px;
+    color: black;
+    align-self: center;
+}
+
+.header-top-left p{
+    margin-left: 40px;
+    align-self: center;
+}
+
+header hr{
+    margin-top: 10px;
+    border: 1px solid #F0F0F0;;
+    
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+}
+.header-top-right{
+    display: flex;
+    padding-top: 10px;
+}
+
+.header-top-right p{
+    align-self: center;
+}
+
+.enter{
+    display: flex;
+}
+
+.enter:hover{
+    color: #FF7010;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.time-work{
+    margin-right: 40px;
+}
+
+.enter img{
+    width: 20px;
+    height: 20px;
+    align-self: center;
+}
+
+.enter p{
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.header-niz-left{
+    display: flex;
+    height: 64px;
+}
+
+.header-niz-left img{
+    align-self:center;
+}
+
+.btn1{
+    background-color: #FF7010;
+    border:#FF7010;
+    border-radius: 4px;
+    width: 110px;
+    height: 40px;
+    align-self: center;
+    background-image: url(../images/korzina.svg);
+    background-repeat: no-repeat;
+    background-position: 16px center;
+}
+
+.btn1 p{
+    display: inline;
+    color: #FFFFFF;
+}
+
+.summ{
+    margin-left: 48px;
+}
+
+.header-niz-left P {
+    align-self: center;
+    margin-left: 12px;
+}
+
+.header-niz{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vibor{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.vibor img{
+    cursor: pointer;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.card{
+    width: 24%;
+    height: auto;
+}
+
+.card2{
+    width: 12%;
+    height: auto;
+}
+
+.checkAdres{
+    height: 80px;
+    background: #ffffff;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.checkAdres p{
+    align-self: center;
+}
+
+#adres{
+    height: 48px;
+    max-width: 783px;
+    width: 100%;
+    margin-left: 32px;
+    align-self: center;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding-left: 40px;
+    background-image: url(../images/geo.svg);
+    background-position: 12px center;
+    background-repeat: no-repeat;
+}
+.check{
+    width: 150px;
+    height: 48px;
+    right: 32px;
+    top: 16px;
+    background: #FF7010;
+    border-radius: 6px;
+    margin-left: 20px;
+    align-self: center;
+}
+
+.block-pizza{
+    margin-top: 30px;
+}
+
+.block-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn2{
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 110px;
+    height: 40px;
+    align-self: center;
+    background-image: url(../images/filtr.svg);
+    background-repeat: no-repeat;
+    background-position: 16px center;
+}
+
+.btn2 span{
+    margin-left: -18px;
+}
+
+.cartochka{
+    width: 300px;
+    height: 480px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 12px;
+}
+
+.items{
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cartochka{
+    margin-bottom: 28px;
+}
+
+.cartochka h3{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 16px;
+}
+
+.cartochka p{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 16px;
+    font-size: 18px;
+}
+
+.choose{
+    background: #FF7010;
+    border: #FF7010;
+    border-radius: 6px;
+    width: 131px;
+    height: 48px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.cartochka-niz{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
