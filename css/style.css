@@ -14,21 +14,49 @@
     max-width: 1290px;
     width: 100%;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 header{
+    width: 100%;
+    background: #FFFFFF;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+.foot-li{
+    margin-top: 22px;
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.foot-li-first{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+footer{
     max-width: 1680px;
     width: 100%;
     margin: 0 auto;
     background: #FFFFFF;
-    height: 105px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-top-left{
     padding-top: 10px;
     display: flex;
+    padding-left: 10px;
 }
 
 .header-top-left select{
@@ -63,6 +91,7 @@ header hr{
 .header-top-right{
     display: flex;
     padding-top: 10px;
+    padding-right: 10px;
 }
 
 .header-top-right p{
@@ -97,6 +126,7 @@ header hr{
 .header-niz-left{
     display: flex;
     height: 64px;
+    padding-left: 10px;
 }
 
 .header-niz-left img{
@@ -109,10 +139,15 @@ header hr{
     border-radius: 4px;
     width: 110px;
     height: 40px;
-    align-self: center;
+    position: relative;
+    top: calc(50% - 20px);
     background-image: url(../images/korzina.svg);
     background-repeat: no-repeat;
     background-position: 16px center;
+}
+
+.korzina{
+    padding-right: 10px;
 }
 
 .btn1 p{
@@ -134,11 +169,19 @@ header hr{
     justify-content: space-between;
 }
 
+
+
+
+
+
+
 .vibor{
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .vibor img{
@@ -149,7 +192,8 @@ header hr{
     display: flex;
     justify-content: space-between;
     padding-bottom: 30px;
-    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .card{
@@ -282,4 +326,32 @@ header hr{
     margin-top: 16px;
     display: flex;
     justify-content: space-between;
+}
+
+.vibor .card2:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+
+
+
+.footer-logo{
+    display: flex;
+    padding-left: 10px;
+}
+
+.footer-logo img{
+    margin-right: 15px;
+    align-self: start;
+}
+
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul:last-child{
+    padding-right: 10px;
 }

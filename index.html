@@ -5,50 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/swiper.css">
 </head>
 <body class="wrapper">
     <header>
-        <div class="header-top center">
-            <div class="header-top-left">
-                <img src="./images/geo.svg" alt="">
-                <select>
-                    <option>Минск</option>
-                    <option>Брест</option>
-                    <option>Гомель</option>
-                </select>
-            <a href="#">Проверить адрес</a>
-            <p>Среднее время доставки: <span style="font-weight: bold;">00:24:35</span> </p>
-            </div>
-            <div class="header-top-right">
-                <p class="time-work">Время работы: с 11:00 до 23:00</p>
-                <div class="enter">
-                    <img src="./images/accaunt.svg" alt="">
-                    <p>Войти в аккаунт</p>
+                <div class="header-top center">
+                <div class="header-top-left">
+                    <img src="./images/geo.svg" alt="">
+                    <select>
+                        <option>Минск</option>
+                        <option>Брест</option>
+                        <option>Гомель</option>
+                    </select>
+                <a href="#">Проверить адрес</a>
+                <p>Среднее время доставки: <span style="font-weight: bold;">00:24:35</span> </p>
                 </div>
-            </div>
-        </div>
+                <div class="header-top-right">
+                    <p class="time-work">Время работы: с 11:00 до 23:00</p>
+                    <div class="enter">
+                        <img src="./images/accaunt.svg" alt="">
+                        <p>Войти в аккаунт</p>
+                    </div>
+                </div>
+            </div> 
         <hr>
         <div class="header-niz center">
             <div class="header-niz-left">
                 <img src="./images/logo-pizza.svg" alt="">
                 <p>PIZZA</p>
             </div>
-            <button class="btn1"><p class="summ">0</p><p> BYN</p></button>
-        </div>
-        
-    </header>
+            <div class="korzina">
+                <button class="btn1"><p class="summ">0</p><p> BYN</p></button>
+            </div>
+        </div> 
+    </header>  
     <section class="center">
         <div class="vibor">
             <img class="card2" src="./images/actions.png" alt="">
-            <img class="card2" src="./images/desert.png" alt="">
-            <img class="card2" src="./images/drinks.png" alt="">
+            <img class="card2" id="block-deserts" src="./images/desert.png" alt="">
+            <img class="card2" id="block-drinks" src="./images/drinks.png" alt="">
             <img class="card2" src="./images/kombo.png" alt="">
-            <img class="card2" src="./images/pizza.png" alt="">
+            <img class="card2" id="block-pizza" src="./images/pizza.png" alt="">
             <img class="card2" src="./images/sousi.png" alt="">
-            <img class="card2" src="./images/sushi.png" alt="">
-            <img class="card2" src="./images/zakuski.png" alt="">
+            <img class="card2" id="block-sushi" src="./images/sushi.png" alt="">
+            <img class="card2" id="block-zakuski" src="./images/zakuski.png" alt="">
         </div>
         <div class="cards">
             <img class="card" src="./images/card1.png" alt="">
@@ -63,7 +67,7 @@
         </div>
     </section>
     <section>
-        <div class="center block-pizza">
+        <div class="center block-pizza prod" id="block-pizza">
             <div class="block-top">
                 <h2>Пицца</h2>
                 <button class="btn2"><p class="summ"><span>Фильтры</span></button>
@@ -145,7 +149,7 @@
             </div>
         </div>
 
-        <div class="center block-sushi">
+        <div class="center block-sushi prod" id="block-sushi">
             <div class="block-top">
                 <h2>Cуши</h2>
                 <button class="btn2"><p class="summ"><span>Фильтры</span></button>
@@ -227,7 +231,7 @@
             </div>
         </div>
 
-        <div class="center block-sushi">
+        <div class="center block-sushi prod" id="block-zakuski">
             <div class="block-top">
                 <h2>Закуски</h2>
                 <button class="btn2"><p class="summ"><span>Фильтры</span></button>
@@ -273,7 +277,7 @@
             </div>
         </div>
 
-        <div class="center block-sushi">
+        <div class="center block-sushi prod" id="block-deserts">
             <div class="block-top">
                 <h2>Десерты</h2>
                 <button class="btn2"><p class="summ"><span>Фильтры</span></button>
@@ -319,7 +323,7 @@
             </div>
         </div>
 
-        <div class="center block-sushi">
+        <div class="center block-sushi prod" id="block-drinks">
             <div class="block-top">
                 <h2>Напитки</h2>
                 <button class="btn2"><p class="summ"><span>Фильтры</span></button>
@@ -366,5 +370,57 @@
         </div>
 
     </section>
+    <!-- <div class="swiper mySwiper center">
+        <div class="swiper-wrapper">
+            <img class="card2 swiper-slide" src="./images/actions.png" alt="">
+            <img class="card2 swiper-slide" src="./images/desert.png" alt="">
+            <img class="card2 swiper-slide" src="./images/drinks.png" alt="">
+            <img class="card2 swiper-slide" src="./images/kombo.png" alt="">
+            <img class="card2 swiper-slide" src="./images/pizza.png" alt="">
+            <img class="card2 swiper-slide" src="./images/actions.png" alt="">
+            <img class="card2 swiper-slide" src="./images/desert.png" alt="">
+            <img class="card2 swiper-slide" src="./images/drinks.png" alt="">
+            <img class="card2 swiper-slide" src="./images/kombo.png" alt="">
+            <img class="card2 swiper-slide" src="./images/pizza.png" alt="">
+            <img class="card2 swiper-slide" src="./images/actions.png" alt="">
+            <img class="card2 swiper-slide" src="./images/desert.png" alt="">
+            <img class="card2 swiper-slide" src="./images/drinks.png" alt="">
+            <img class="card2 swiper-slide" src="./images/kombo.png" alt="">
+            <img class="card2 swiper-slide" src="./images/pizza.png" alt="">
+        </div>
+        <div class="swiper-pagination"></div>
+      </div> -->
+   <footer>
+        <div class="center footer-content">
+            <div class="footer-logo">
+                <img src="./images/logo-pizza.svg" alt="">
+                <!-- <h3>Pizza</h3> -->
+            </div>
+            <ul>
+                <li class="foot-li-first">Pizza</li>
+                <li class="foot-li">О компании</li>
+                <li class="foot-li">Соглашение</li>
+                <li class="foot-li">Условия</li>
+            </ul>
+            <ul>
+                <li class="foot-li-first">Помощь</li>
+                <li class="foot-li">Ресторан</li>
+                <li class="foot-li">Контакты</li>
+                <li class="foot-li">Поддержка</li>
+                <li class="foot-li">Отследить заказ</li>
+            </ul>
+            <ul>
+                <li class="foot-li-first">Контакты</li>
+                <li class="foot-li">О компании</li>
+                <li class="foot-li">Соглашение</li>
+                <li class="foot-li">Условия</li>
+        </ul>
+        </div>
+    </footer> 
+    
+
+    <script src="./scripts/slider.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
